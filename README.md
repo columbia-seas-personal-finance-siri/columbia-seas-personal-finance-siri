@@ -1,1 +1,1 @@
-# columbia-seas-personal-finance-siri
+# Personal Finance with Siri (FinSnap extension)
