@@ -1,6 +1,6 @@
 web scraping of:
 Financial News and Magazines:
-36. Financial Times
+36. Financial Times ----------cannot use, need subscription
 37. Forbes
 38. Money Magazine
 39. Kiplinger
