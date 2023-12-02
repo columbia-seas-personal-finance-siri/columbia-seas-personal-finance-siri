@@ -19,7 +19,19 @@ text_splitter=RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=0)
 docs=text_splitter.split_documents(data)
 embeddings=HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2')
 vectorstore=FAISS.from_documents(docs, embeddings)
+# GCP bucket
+def load_file(file_path):
+    return TextLoader(file_path)
+loader = GCSFileLoader(
+    project_name="finsnap", bucket="finsnap-867a9.appspot.com", blob="finsnap-867a9-default-rtdb-export.json", loader_func=load_file
+)
+data = loader.load()
+text_splitter=RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=0)
+docs=text_splitter.split_documents(data)
+embeddings=HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2')
+vectorstore=FAISS.from_documents(docs, embeddings)
 
+# main part
 template = """Query the related information about the question: {color}
 
 answer:"""
