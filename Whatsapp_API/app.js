@@ -96,8 +96,11 @@ function showMovieIntegration(req, res) {
       body.entry[0].changes[0].value.messages &&
       body.entry[0].changes[0].value.messages[0]) {
     let recipientPhoneNumber = getRecipientPhoneNumber(req); 
+    let msg_body = body.entry[0].changes[0].value.messages[0].text.body; // Extract the message text
 
-    var data = getTemplatedMessageInput(recipientPhoneNumber);
+    // Use the conditional template function based on the message body
+    var data = getConditionalTemplatedMessageInput(recipientPhoneNumber, msg_body);
+
 
     sendMessage(data)
       .then(function (response) {
@@ -142,17 +145,53 @@ function sendMessage(data) {
   return axios(config)
 }
 
-function getTemplatedMessageInput(recipient) {
-  return JSON.stringify({
+// function getTemplatedMessageInput(recipient) {
+//   return JSON.stringify({
+//     "messaging_product": "whatsapp",
+//     "to": recipient,
+//     "type": "template",
+//     "template": {
+//       "name": "thank_you_read_more",
+//       "language": {
+//         "code": "en_US"
+//       }
+//     }
+//   }
+//   );
+// }
+function getConditionalTemplatedMessageInput(recipient, inputText) {
+  let templateName, languageCode = "en_US";  // Default language code
+
+  // Determine the template based on the input text
+  switch (inputText.toLowerCase()) {
+    case "who are you?":
+      templateName = "hello";
+      break;
+    case "could you introduce 527 plan?":
+      templateName = "529_plan";
+      break;
+    case "how about capital one venture card?":
+      templateName = "card_offer";
+      break;
+    case "thank you":
+      templateName = "thank_you_read_more";
+      break;
+    default:
+      templateName = "card_offer";  // A default template if the input doesn't match any case
+  }
+
+  // Build the template message data
+  let templateData = {
     "messaging_product": "whatsapp",
     "to": recipient,
     "type": "template",
     "template": {
-      "name": "thank_you_read_more",
+      "name": templateName,
       "language": {
-        "code": "en_US"
+        "code": languageCode
       }
     }
-  }
-  );
+  };
+
+  return JSON.stringify(templateData);
 }
