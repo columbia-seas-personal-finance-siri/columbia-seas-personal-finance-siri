@@ -47,7 +47,8 @@ memory=ConversationBufferMemory(memory_key='chat_history', return_messages=True)
 mem_qa=ConversationalRetrievalChain.from_llm(llm=llm,
                                              retriever=vectorstore.as_retriever(),
                                              memory=memory,
-                                             get_chat_history=lambda h : h)
+                                             get_chat_history=lambda h : h,
+                                             prompt=prompt)
 chain = prompt | llm
 @functions_framework.http
 def chat(request):
