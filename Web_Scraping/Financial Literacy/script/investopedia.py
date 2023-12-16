@@ -20,9 +20,11 @@ for card_content in card_contents:
     date = card_content.find('div', class_='displayed-date').get_text()[8:]
 
     # Create a dictionary and append to the result list
-    result_list.append({'category': category, 'title': title, 'author': author, 'date': date, 
-                        'links': [anc.get("href") for anc in anchor]})
+    result_list.append({'category': category, 'title': title, 'author': author, 'date': date})
 
+for a in anchor:
+    result_list.append({'links': [a.get("href")]})
+    
 # Print or use the result_list as needed
 print(result_list)
 
