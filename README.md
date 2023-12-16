@@ -17,7 +17,7 @@
 
 SEAS mentor & co-mentors: Dr. Nakul Verma, Diya Roongta, Vincent Le
 
-Instructor/CA: Prof. Sining Chen, Aayush Verma
+Instructor/CA: Prof. Vivian Zhang, Peter Chao
 
 
 
