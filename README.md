@@ -1,5 +1,5 @@
 
-#Project name: Personal Finance with Siri (FinSnap extension) 
+# Project name: Personal Finance with Siri (FinSnap extension) 
 
 ## Group members (organized by Name and UNI)
 - Qinqi Zhang qz2490 (Team captain)
