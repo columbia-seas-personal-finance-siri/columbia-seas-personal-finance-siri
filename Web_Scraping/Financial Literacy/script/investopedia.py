@@ -12,18 +12,18 @@ card_contents = soup.find_all('div', class_='card__content')
 anchor = soup.find_all('a', class_= 'comp mntl-card-list-items mntl-document-card mntl-card card card--no-image')
 
 result_list = []
-for card_content in card_contents:
+for card_content, anchor in zip(card_contents, anchor):
 
     category = card_content['data-tag']
     title = card_content.find('span', class_='card__title-text').get_text()
     author = card_content.find('div', class_='byline--simple__author').get_text()
     date = card_content.find('div', class_='displayed-date').get_text()[8:]
-
+    link = anchor.get("href")
     # Create a dictionary and append to the result list
-    result_list.append({'category': category, 'title': title, 'author': author, 'date': date})
+    result_list.append({'category': category, 'title': title, 'author': author, 'date': date, 'link': link})
 
-for a in anchor:
-    result_list.append({'links': [a.get("href")]})
+#for a in anchor:
+#    result_list.append({'links': [a.get("href")]})
     
 # Print or use the result_list as needed
 print(result_list)
@@ -42,8 +42,8 @@ for box in box_all:
 
 
 # Save the result to a JSON file
-with open('investopedia.json', 'w') as json_file:
-    json.dump(result_list, json_file, indent=2)
+#with open('investopedia.json', 'w') as json_file:
+#    json.dump(result_list, json_file, indent=2)
 
 #Get titles
 #titles = box_all.find('span', class_= 'card__title-text')
