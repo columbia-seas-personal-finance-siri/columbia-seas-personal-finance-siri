@@ -8,9 +8,14 @@
 - Yanqing Wang yw3974
 - Yixing Tu yt2830
 
-Emails <UNI> @ columbia.edu
+### Emails 
+- qz2490@columbia.edu
+- mp4145@columbia.edu
+- sz3097@columbia.edu
+- yw3974@columbia.edu
+- yt2830@columbia.edu
 
-Accenture mentor & co-mentors: Dr Bhushan, Surajit Sen, Priyanka Pandey
+SEAS mentor & co-mentors: Dr. Nakul Verma, Diya Roongta, Vincent Le
 
 Instructor/CA: Prof. Sining Chen, Aayush Verma
 
