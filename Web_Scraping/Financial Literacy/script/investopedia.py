@@ -25,5 +25,5 @@ for card_content, anchor in zip(card_contents, anchor):
 print(result_list)
 
 # Save the result to a JSON file
-#with open('investopedia.json', 'w') as json_file:
-#    json.dump(result_list, json_file, indent=2)
+with open('investopedia.json', 'w') as json_file:
+    json.dump(result_list, json_file, indent=2)
