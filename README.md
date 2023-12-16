@@ -25,6 +25,11 @@
 - Peter Chao
 
 
+In response to the prevalent lack of personalized, real-time financial guidance for university students, **FinSnap** emerges as an innovative platform leveraging AI and ML technology. The aim is to provide comprehensive real-time decision-making support and financial literacy education tailored to individual needs. 
+
+This capstone project addresses the challenge through the development of a multifaceted solution, integrating financial education with a chatbot-driven guide. The primary focus is on enhancing users' financial well-being by increasing savings and reducing expenditures through intelligent financial practices.
+
+The implemented solution involves a pipeline connecting personal finance data sources to the Llama2 and Palm LLM, deployed efficiently using cloud functions. This setup ensures successful calls to the respective endpoints through Vertex AI, resulting in accurate AI-driven conversation responses. Our future plan entails refining the deployment of this pipeline on accessible platforms such as WhatsApp or a web app, with the ultimate goal of incorporating all functionalities required for the chatbot. Additionally, to ensure continuous relevance, we propose a scheduled daily data refresh of our custom database. This comprehensive approach positions FinSnap as a transformative tool in the realm of AI-driven financial guidance for university students, offering a unique blend of real-time support and educational resources.
 
 
 
