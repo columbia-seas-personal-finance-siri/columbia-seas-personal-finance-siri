@@ -1,4 +1,4 @@
-# Personal Finance with Siri (FinSnap extension):
+# Personal Finance with Siri (FinSnap extension)
 
 A shared Google folder to save everything: https://drive.google.com/drive/folders/1ZIFys7AGhmHBnYXWVdXEuK4fLEe-kQEg?usp=sharing  
 
