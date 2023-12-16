@@ -1,11 +1,12 @@
 
-Project name: Audio Transcription with WAV2VEC 2.0 Group members (organized by Name and UNI)
+#Project name: Personal Finance with Siri (FinSnap extension) 
 
-Qinqi Zhang qz2490 (Team captain)
-Maria Pratyusha mp4145
-Sijia Zhu sz3097
-Yanqing Wang yw3974
-Yixing Tu yt2830
+## Group members (organized by Name and UNI)
+- Qinqi Zhang qz2490 (Team captain)
+- Maria Pratyusha mp4145
+- Sijia Zhu sz3097
+- Yanqing Wang yw3974
+- Yixing Tu yt2830
 
 Emails <UNI> @ columbia.edu
 
@@ -16,13 +17,6 @@ Instructor/CA: Prof. Sining Chen, Aayush Verma
 
 
 
-
-
-
-
-
-
-# Personal Finance with Siri (FinSnap extension)
 
 A shared Google folder to save everything: https://drive.google.com/drive/folders/1ZIFys7AGhmHBnYXWVdXEuK4fLEe-kQEg?usp=sharing  
 
