@@ -15,9 +15,14 @@
 - yw3974@columbia.edu
 - yt2830@columbia.edu
 
-SEAS mentor & co-mentors: Dr. Nakul Verma, Diya Roongta, Vincent Le
+#### SEAS mentor & co-mentors: 
+- Dr. Nakul Verma
+- Diya Roongta
+- Vincent Le
 
-Instructor/CA: Prof. Vivian Zhang, Peter Chao
+#### Instructor/CA: 
+- Ms. Vivian Zhang
+- Peter Chao
 
 
 
